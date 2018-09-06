@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <script type="text/javascript" src="p.js"></script>
+    <title>Validar campos</title>
+</head>
+<body>
+        <center>
+            <h2>Bienvenido Ingrese los datos del formulario para comenzar</h2>
+            <br>
+        
+            <form action="pintar" method="POST" onsubmit="return valida(this),color(this)" target="pp">
+                <table width="201" border="0">
+                    <tr>
+                        <td width="73">Nombre</td>
+                        <td>
+                            <label for="usuario"></label>
+                            <input type="text" name="nNombre" id="nNombre" />
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="73">Genero</td>
+                        <td>
+                            <label for="Genero"></label>
+                            <input type="checkbox" name="femenimo" id="femenimo" value="Femenino" >Femenino                              
+                            <br/>
+                            <input type="checkbox" name="masculino" id="masculino" value=Masculino>Masculino
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="73">Edad</td>
+                        <td>
+                            <label for="Edad"></label>
+                            <input type="text" name="edad" id="edad" />
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="calcular" value="Enviar" onchange="color(this)"/>
+                        </td>
+                        <td>
+                            <input type="reset" value="Borrar" name="limpiar" id="limpiar" />
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+              
+            </form>
+            
+        </center>
+</body>
+</html>
