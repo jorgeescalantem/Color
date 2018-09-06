@@ -38,7 +38,7 @@ public class pintar extends HttpServlet {
             out.println("<body>");
             for (int i=1;ed>=i;i++){
                 contador++;
-            out.println("<h1>"+" "+contador+"Hola señor:"+" " + nombre +" "+"su edad es: "+edad+ "</h1>");
+            out.println("<h1>"+contador+" "+"Hola señor:"+" " + nombre +" "+"su edad es: "+edad+ "</h1>");
             }
             out.println("</body>");
             out.println("</html>");
