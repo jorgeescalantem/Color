@@ -1,17 +1,12 @@
-$(document).ready(function () {
 
-});
     function valida(f) {
         var ok = true;
         var ok1=true;
-        var ok2 = true;
-        // var checkboxf=document.getElementById("masculino");
-        // var checkboxm = document.getElementById("femenino");
         var ed = document.getElementById("edad").value;
         var nn = document.getElementById("nNombre").value;
         var patt = new RegExp(/^[A-Za-z\s]+$/g);
         var ok2 = patt.test(nn);
-        console.log("res"+ok2);
+        //console.log("res"+ok2);
         var msg = "Debes escribir algo en los campos:\n";
         var msg1 = "el campo edad solo soporta numeros \n";
         var msg2 = "el campo nombre solo soporta letras y espacios \n";
@@ -43,34 +38,28 @@ $(document).ready(function () {
 
     }
  function color(g) {
-     //console.log(g.value);
-
      var checkBoxm = document.getElementById("masculino");
+     var checkBoxf = document.getElementById("femenimo");
      var marcadof=true;
+     var marcadom = true;
+     var msgmarca="debe seleccionar un genero";
+
 
      var frame = document.getElementById("pp");
-     if (checkBoxm.checked == true) {
-         frame.style.backgroundColor = " #67d039"; 
+     if (checkBoxm.checked == true ) {
+         frame.style.backgroundColor = "#67d039 ";
+        marcadom;
          marcadof=false; 
-     } 
-     else  {
-         marcadof=true;
+     } else if (checkBoxf.checked == true) {
+         marcadom = false;
+         marcadof;
          frame.style.backgroundColor = "#edd633";  
      } 
-//return marcadof;
-     console.log(marcadof);
- }
-
-function reSize() {
-    try {
-        var oBody = ifrm.document.body;
-        var oFrame = document.all("ifrm");
-
-        oFrame.style.height = oBody.scrollHeight + (oBody.offsetHeight - oBody.clientHeight);
-        oFrame.style.width = oBody.scrollWidth + (oBody.offsetWidth - oBody.clientWidth);
+     else  {
+         frame.target;
+         alert(msgmarca);
+     } 
     }
-    //An error is raised if the IFrame domain != its container's domain
-    catch (e) {
-        window.status = 'Error: ' + e.number + '; ' + e.description;
-    }
-}
+
+
+
